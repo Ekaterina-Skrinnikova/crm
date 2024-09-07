@@ -1,3 +1,4 @@
+import { LogoUploader } from './components/LogoUploader'
 import StatusLable, { Status } from './components/StatusLabel'
 
 export default function Home() {
@@ -8,6 +9,9 @@ export default function Home() {
             <StatusLable status={Status.NotActive}>Not active</StatusLable>
             <StatusLable status={Status.Pending}>Pending</StatusLable>
             <StatusLable status={Status.Suspended}>Suspended</StatusLable>
+
+            <LogoUploader label="Logo" placeholder="Upload photo" id="15" />
+            <LogoUploader label="Image" placeholder="Upload photo" id="17" />
         </main>
     )
 }
