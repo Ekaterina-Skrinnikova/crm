@@ -1,3 +1,4 @@
+import Button from './components/Button'
 import InputField from './components/InputField'
 import { LogoUploader } from './components/LogoUploader'
 import StatusLable, { Status } from './components/StatusLabel'
@@ -15,6 +16,8 @@ export default function Home() {
             <LogoUploader label="Image" placeholder="Upload photo" id="17" />
 
             {/* <InputField label="Status" id="13" /> */}
+
+            <Button type="button">Add company</Button>
         </main>
     )
 }
