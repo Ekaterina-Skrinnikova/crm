@@ -19,7 +19,7 @@ export function LogoUploader({
             {label && <p className="text-base color-grey-900">{label}</p>}
             <label
                 htmlFor={id}
-                className="flex flex-col justify-center items-center "
+                className="flex flex-col justify-center items-center w-40 h-40 bg-white border border-slate-900 border-dashed rounded-full cursor-pointer"
             >
                 <Image
                     className="mb-1"
