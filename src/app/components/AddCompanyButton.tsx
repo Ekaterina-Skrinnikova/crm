@@ -1,13 +1,23 @@
 'use client'
 
-// import React from 'react'
-// import Button from './Button'
+import React, { useState } from 'react'
+import dynamic from 'next/dynamic'
+import Button from './Button'
 
-// export default function AddCompanyButton({ params }: type) {
-//     return (
-//         <div>
-//             <Button>Add company</Button>
-//             <div>Modal</div>
-//         </div>
-//     )
-// }
+const CompanyFormModal = dynamic(() => import('./CompanyFormModal'), {
+    ssr: false,
+})
+
+export default function AddCompanyButton() {
+    const [isOpen, setIsOpen] = useState(false)
+    return (
+        <div>
+            <Button onClick={() => setIsOpen(true)}>Add company</Button>
+            <CompanyFormModal
+                onSubmit={console.log}
+                isOpen
+                onClose={() => setIsOpen(false)}
+            />
+        </div>
+    )
+}

@@ -1,3 +1,5 @@
+'use client'
+
 import { Form, Formik } from 'formik'
 import { LogoUploader } from './LogoUploader'
 import InputField from './InputField'
