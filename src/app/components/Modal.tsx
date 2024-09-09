@@ -21,7 +21,7 @@ export default function Modal({ isOpen, children, onClose }: ModalProps) {
                 </TransitionChild>
 
                 <TransitionChild>
-                    <div className="fixed inset-y-0 left-0 w-64 bg-white transition duration-300 data-[closed]:-translate-x-full">
+                    <div className="relative transform overflow-hidden rounded-lg bg-white shadow-xl transition-all p-7 mx-auto sm:my-10 sm:w-full sm:max-w-2xl">
                         {children}
                     </div>
                 </TransitionChild>

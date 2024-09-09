@@ -12,7 +12,7 @@ export default function InputField({ label, id, ...rest }: InputFieldProps) {
     return (
         <div className="flex flex-col">
             {label && (
-                <label className="mb-5 text-base color-gray-900" htmlFor={id}>
+                <label className="mb-2 text-base color-gray-900" htmlFor={id}>
                     {label}
                 </label>
             )}
