@@ -30,8 +30,8 @@ export default function CompanyRow({
     joinedDate,
 }: CompanyRowProps) {
     return (
-        <tr>
-            <td className="text-xs font-medium text-blue-700 rounded-l border-l-4 border-blue-700">
+        <tr className="h-14 text-center text-gray-900 bg-white">
+            <td className=" text-xs font-medium text-blue-700 rounded-l border-l-4 border-blue-700 ">
                 {category}
             </td>
             <td>{company}</td>
@@ -41,7 +41,7 @@ export default function CompanyRow({
                 </StatusLable>
             </td>
             <td>
-                <div>
+                <div className="inline-flex items-center gap-1">
                     <Image
                         width={16}
                         height={16}
@@ -59,7 +59,9 @@ export default function CompanyRow({
                 </div>
             </td>
             <td>{country}</td>
-            <td>{new Date(joinedDate).toLocaleDateString('uk-UA')}</td>
+            <td className="rounded-r">
+                {new Date(joinedDate).toLocaleDateString('uk-UA')}
+            </td>
         </tr>
     )
 }
