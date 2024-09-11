@@ -1,5 +1,6 @@
 import AddCompanyButton from './components/AddCompanyButton'
 import MagicButton from './components/MagicButton'
+import StatCard, { StatCardProps } from './components/StatCard/index'
 
 export default function Home() {
     return (
