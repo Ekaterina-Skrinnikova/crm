@@ -8,11 +8,11 @@ export enum StatCardType {
 
 export interface StatCardProps {
     type: StatCardType
-    lable: string
+    label: string
     counter: number
 }
 
-export default function StatCard({ type, lable, counter }: StatCardProps) {
+export default function StatCard({ type, label, counter }: StatCardProps) {
     return (
         <div
             className={clsx(
@@ -34,7 +34,7 @@ export default function StatCard({ type, lable, counter }: StatCardProps) {
                         'text-xs mb-5 before:inline-block before:mr-2 before:align-middle before:bg-gray-900'
                 )}
             >
-                {lable}
+                {label}
             </p>
             <p className="text-6xl font-semibold">{counter}</p>
         </div>
