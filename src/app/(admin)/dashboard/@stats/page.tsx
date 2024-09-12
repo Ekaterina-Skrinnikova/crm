@@ -13,9 +13,9 @@ const lableByStat = {
 export default async function Page({}: PageProps) {
     const data = await getSummaryStats()
     return (
-        <ul>
+        <ul className="grid grid-cols-12 gap-5">
             {(Object.keys(lableByStat) as (keyof typeof data)[]).map((key) => (
-                <li>
+                <li key={key} className="col-span-3">
                     <StatCard
                         type={StatCardType.Gradient}
                         lable={lableByStat[key]}
