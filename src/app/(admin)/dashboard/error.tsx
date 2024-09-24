@@ -11,7 +11,7 @@ export interface ErrorComponentProps {
 export default function ErrorComponent({ error, reset }: ErrorComponentProps) {
     return (
         <div>
-            <p>Something went wrong. ${error.message}</p>
+            <p>{`Something went wrong. ${error.message}`}</p>
             <Button onClick={() => reset()}>Try again</Button>
         </div>
     )

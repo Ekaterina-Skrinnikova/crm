@@ -10,14 +10,15 @@ const CompanyFormModal = dynamic(() => import('./CompanyFormModal'), {
 
 export default function AddCompanyButton() {
     const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div>
             <Button onClick={() => setIsOpen(true)}>Add company</Button>
-            {/* <CompanyFormModal
+            <CompanyFormModal
                 onSubmit={console.log}
                 isOpen
                 onClose={() => setIsOpen(false)}
-            /> */}
+            />
         </div>
     )
 }

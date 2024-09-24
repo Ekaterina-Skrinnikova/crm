@@ -1,20 +1,13 @@
 import React from 'react'
-import Header from '@/app/components/Header'
-import Toolbar from '@/app/components/Toolbar'
-import SearchInput from '@/app/components/SearchInput'
-import AddCompanyButton from '@/app/components/AddCompanyButton'
 
-export interface PageProps {}
+export interface PageProps {
+    params: { id: string }
+}
 
-export default function Page({}: PageProps) {
+export default function Page({ params }: PageProps) {
     return (
-        <>
-            <Header>Costco Wholesale</Header>
-            <main>
-                <Toolbar action={<AddCompanyButton />}>
-                    <SearchInput placeholder="Search..." />
-                </Toolbar>
-            </main>
-        </>
+        <div className="py-6 px-10">
+            <p>{`Information about company (${params.id})`}</p>
+        </div>
     )
 }
