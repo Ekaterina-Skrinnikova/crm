@@ -1,11 +1,7 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Toolbar from '../../components/Toolbar'
-import AddCompanyButton from '../../components/AddCompanyButton'
-import SearchInput from '../../components/SearchInput'
-import CompanyTable from '../../components/CompanyTable'
-import CompanyRow from '../../components/CompanyRow'
-import { Status } from '../../components/StatusLabel'
+import CompanyRow from '@/app/components/CompanyRow'
+import CompanyTable from '@/app/components/CompanyTable'
+import { Status } from '@/app/components/StatusLabel'
 
 export interface PageProps {}
 
